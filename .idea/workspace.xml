@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1f4f92b-9cdb-426a-949d-429782d70fa7" name="Changes" comment="добавил схему добавления таблицы в БД">
-      <change afterPath="$PROJECT_DIR$/src/main/exchange_rates.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/my.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/сurrencies.sql" afterDir="false" />
-    </list>
+    <list default="true" id="a1f4f92b-9cdb-426a-949d-429782d70fa7" name="Changes" comment="заполнил реадми как запустить бд+скрипты" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,6 +107,7 @@
       <workItem from="1722340069187" duration="11000" />
       <workItem from="1722340348938" duration="5722000" />
       <workItem from="1722347372762" duration="1147000" />
+      <workItem from="1722348596275" duration="446000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -138,7 +133,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722346088358</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="добавил бд. добавил таблицы в бд">
+      <option name="closed" value="true" />
+      <created>1722348654393</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722348654393</updated>
+    </task>
+    <task id="LOCAL-00005" summary="заполнил реадми как запустить бд+скрипты">
+      <option name="closed" value="true" />
+      <created>1722349029619</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722349029619</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +159,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
     <MESSAGE value="добавил схему добавления таблицы в БД" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил схему добавления таблицы в БД" />
+    <MESSAGE value="добавил бд. добавил таблицы в бд" />
+    <MESSAGE value="заполнил реадми как запустить бд+скрипты" />
+    <option name="LAST_COMMIT_MESSAGE" value="заполнил реадми как запустить бд+скрипты" />
   </component>
 </project>
