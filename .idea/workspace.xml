@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1f4f92b-9cdb-426a-949d-429782d70fa7" name="Changes" comment="рефакторинг">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Currencies/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Currencies/CurrencyRepository.java" afterDir="false" />
+    <list default="true" id="a1f4f92b-9cdb-426a-949d-429782d70fa7" name="Changes" comment="создание REST для запросов в постман">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/SQLiteDialect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CurrencyExchangerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/exchange_rates.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB/exchange_rates.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/my.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB/my.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/сurrencies.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB/сurrencies.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,39 +58,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/maksimnurutdinov/Desktop/CurrencyExchanger&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/maksimnurutdinov/IdeaProjects/CurrencyExchanger/src/main/java/org/example/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CurrencyExchangerApplication (1).executor": "Run",
+    "Spring Boot.CurrencyExchangerApplication.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/maksimnurutdinov/Desktop/CurrencyExchanger",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/maksimnurutdinov/IdeaProjects/CurrencyExchanger/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;SQLite&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "SQLite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/DB" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Database Script.сurrencies.sql">
+  <component name="RunManager" selected="Spring Boot.CurrencyExchangerApplication">
     <configuration name="exchange_rates.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/main/exchange_rates.sql" />
       <script-mode>FILE</script-mode>
@@ -92,12 +108,25 @@
       <method v="2" />
     </configuration>
     <configuration name="сurrencies.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/src/main/сurrencies.sql" />
       <script-mode>FILE</script-mode>
       <method v="2" />
     </configuration>
+    <configuration name="CurrencyExchangerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="CurrencyExchanger" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.CurrencyExchangerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CurrencyExchangerApplication" />
         <item itemvalue="Database Script.exchange_rates.sql" />
       </list>
     </recent_temporary>
@@ -125,7 +154,11 @@
       <workItem from="1722340069187" duration="11000" />
       <workItem from="1722340348938" duration="5722000" />
       <workItem from="1722347372762" duration="1147000" />
-      <workItem from="1722348596275" duration="2341000" />
+      <workItem from="1722348596275" duration="3202000" />
+      <workItem from="1722359269271" duration="69000" />
+      <workItem from="1722359340178" duration="390000" />
+      <workItem from="1722359760351" duration="329000" />
+      <workItem from="1722360092227" duration="977000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -183,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722350553486</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="создание REST для запросов в постман">
+      <option name="closed" value="true" />
+      <created>1722351197429</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722351197429</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +237,7 @@
     <MESSAGE value="добавил бд. добавил таблицы в бд" />
     <MESSAGE value="заполнил реадми как запустить бд+скрипты" />
     <MESSAGE value="рефакторинг" />
-    <option name="LAST_COMMIT_MESSAGE" value="рефакторинг" />
+    <MESSAGE value="создание REST для запросов в постман" />
+    <option name="LAST_COMMIT_MESSAGE" value="создание REST для запросов в постман" />
   </component>
 </project>
