@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1f4f92b-9cdb-426a-949d-429782d70fa7" name="Changes" comment="создание REST для запросов в постман">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/SQLiteDialect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CurrencyExchangerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/exchange_rates.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB/exchange_rates.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/my.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB/my.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/сurrencies.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB/сurrencies.sql" afterDir="false" />
-    </list>
+    <list default="true" id="a1f4f92b-9cdb-426a-949d-429782d70fa7" name="Changes" comment="рефакторинг" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +144,7 @@
       <workItem from="1722359269271" duration="69000" />
       <workItem from="1722359340178" duration="390000" />
       <workItem from="1722359760351" duration="329000" />
-      <workItem from="1722360092227" duration="977000" />
+      <workItem from="1722360092227" duration="1043000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -224,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722351197429</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="рефакторинг">
+      <option name="closed" value="true" />
+      <created>1722361121903</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722361121903</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,8 +230,8 @@
     <MESSAGE value="добавил схему добавления таблицы в БД" />
     <MESSAGE value="добавил бд. добавил таблицы в бд" />
     <MESSAGE value="заполнил реадми как запустить бд+скрипты" />
-    <MESSAGE value="рефакторинг" />
     <MESSAGE value="создание REST для запросов в постман" />
-    <option name="LAST_COMMIT_MESSAGE" value="создание REST для запросов в постман" />
+    <MESSAGE value="рефакторинг" />
+    <option name="LAST_COMMIT_MESSAGE" value="рефакторинг" />
   </component>
 </project>
