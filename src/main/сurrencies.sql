@@ -1,4 +1,4 @@
--- Создание таблицы Valute
+
 CREATE TABLE Currencies
 (
     ID       INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -7,7 +7,6 @@ CREATE TABLE Currencies
     Sign     VARCHAR(10)
 );
 
--- Вставка данных
 INSERT INTO Currencies (Code, FullName, Sign)
 VALUES ('AUD', 'Австралийский доллар', 'A$'),
        ('AZN', 'Азербайджанский манат', '₼'),
