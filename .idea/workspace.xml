@@ -4,23 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1f4f92b-9cdb-426a-949d-429782d70fa7" name="Changes" comment="рефакторинг">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/dbm/DatabaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/filters/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/listeners/C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/repositories/example/CurrencyExchangerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/servlets/CurrenciesServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+    <list default="true" id="a1f4f92b-9cdb-426a-949d-429782d70fa7" name="Changes" comment="add DB manager and servlets">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/сurrencyExchanger/CurrenciesServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/сurrencyExchanger/CurrencyDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DB/exchange_rates.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/exchange_rates.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DB/сurrencies.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/сurrencies.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CurrencyExchangerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/my.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/dbm/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/сurrencyExchanger/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/filters/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/listeners/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/models/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/сurrencyExchanger/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/models/ExchangeRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/сurrencyExchanger/ExchangeRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/repositories/example/CurrencyExchangerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/сurrencyExchanger/CurrencyExchangerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/lcaitlyn/CurrencyExchanger/servlets/CurrenciesServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/exchange_rates.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/exchange_rates.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/сurrencies.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/сurrencies.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,9 @@
     &quot;accountId&quot;: &quot;abe595d7-be94-478f-b697-14e079bef96b&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -60,65 +64,66 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.CurrencyExchangerApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "HTTP Request.All in generated-requests.executor": "Run",
-    "HTTP Request.generated-requests | #1.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.CurrencyExchangerApplication (1).executor": "Run",
-    "Spring Boot.CurrencyExchangerApplication.executor": "Run",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/maksimnurutdinov/Desktop/CurrencyExchanger",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/maksimnurutdinov/IdeaProjects/CurrencyExchanger/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.CurrencyExchangerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in generated-requests.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Smart Tomcat.Tomcat: CurrencyExchanger.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CurrencyExchangerApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CurrencyExchangerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/maksimnurutdinov/Desktop/CurrencyExchanger&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/maksimnurutdinov/IdeaProjects/CurrencyExchanger/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
-      "SQLite"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;SQLite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/java/DB" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="edu.lcaitlyn.CurrencyExchanger" />
     </key>
   </component>
-  <component name="RunManager" selected="Database Script.сurrencies.sql">
+  <component name="RunManager" selected="Application.CurrencyExchangerApplication">
     <configuration name="CurrencyExchangerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.lcaitlyn.CurrencyExchanger.repositories.example.CurrencyExchangerApplication" />
+      <option name="MAIN_CLASS_NAME" value="edu.lcaitlyn.сurrencyExchanger.CurrencyExchangerApplication" />
       <module name="CurrencyExchanger" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.lcaitlyn.CurrencyExchanger.repositories.example.*" />
+          <option name="PATTERN" value="edu.lcaitlyn.сurrencyExchanger.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,10 +149,30 @@
       <script-mode>FILE</script-mode>
       <method v="2" />
     </configuration>
+    <configuration name="Tomcat: CurrencyExchanger" type="com.poratu.idea.plugins.tomcat" temporary="true">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="$USER_HOME$/.SmartTomcat/CurrencyExchanger/CurrencyExchanger" />
+      <option name="contextPath" value="/CurrencyExchanger" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="extraClassPath" value="" />
+      <option name="vmOptions" value="" />
+      <module name="CurrencyExchanger" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Database Script.сurrencies.sql" />
         <item itemvalue="Application.CurrencyExchangerApplication" />
+        <item itemvalue="Smart Tomcat.Tomcat: CurrencyExchanger" />
+        <item itemvalue="Database Script.сurrencies.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +209,8 @@
       <workItem from="1722363484360" duration="1107000" />
       <workItem from="1722368172003" duration="2968000" />
       <workItem from="1722373453187" duration="2204000" />
-      <workItem from="1722414944689" duration="1642000" />
+      <workItem from="1722414944689" duration="4007000" />
+      <workItem from="1722421929241" duration="6243000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
@@ -274,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722364395136</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add DB manager and servlets">
+      <option name="closed" value="true" />
+      <created>1722419874134</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722419874134</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +322,7 @@
     <MESSAGE value="заполнил реадми как запустить бд+скрипты" />
     <MESSAGE value="создание REST для запросов в постман" />
     <MESSAGE value="рефакторинг" />
-    <option name="LAST_COMMIT_MESSAGE" value="рефакторинг" />
+    <MESSAGE value="add DB manager and servlets" />
+    <option name="LAST_COMMIT_MESSAGE" value="add DB manager and servlets" />
   </component>
 </project>
