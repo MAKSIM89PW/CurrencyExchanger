@@ -1,5 +1,5 @@
 
-CREATE TABLE сurrencies
+CREATE TABLE currencies
 (
     ID       INTEGER PRIMARY KEY AUTOINCREMENT,
     Code     VARCHAR(3)   NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE сurrencies
     Sign     VARCHAR(10)
 );
 
-INSERT INTO сurrencies (Code, FullName, Sign)
+INSERT INTO currencies (Code, FullName, Sign)
 VALUES ('AUD', 'Австралийский доллар', 'A$'),
        ('AZN', 'Азербайджанский манат', '₼'),
        ('GBP', 'Фунт стерлингов Соединенного королевства', '£'),
